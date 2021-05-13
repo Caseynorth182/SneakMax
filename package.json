@@ -5,9 +5,9 @@
   "main": "gulpfile.js",
   "scripts": {
     "html": "node-w3c-validator -f lint -evH -i app/**/*.html",
-		"dev": "gulp",
-		"build": "gulp build",
-		"cache": "gulp cache",
+    "dev": "gulp",
+    "build": "gulp build",
+    "cache": "gulp cache",
     "backend": "gulp backend",
     "code": "editorconfig-checker"
   },

@@ -1,5 +1,16 @@
-// COLORS
 :root {
+  //colors
   --color-black: #000;
   --color-white: #fff;
+  --color-bg-blue: #484283;
+  --color-accent: #F14F4F;
+
+  //отступы
+  --grip-gap: 20px;
+  --main-offset: 40px;
+
+  //Fonts 
+  --font-family: 'Intro', sans-serif;
+  --middle-high: 700 30px / 140% var(--font-family);
+  --small: 400 14px / 140% var(--font-family);
 }

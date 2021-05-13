@@ -1,0 +1,31 @@
+.cart {
+  margin-left: var(--main-offset);
+
+  &__btn {
+    position: relative;
+    width: 20px;
+    height: 20px;
+
+    svg {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__count {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    position: absolute;
+    right: -6px;
+    bottom: -6px;
+    background-color: var(--color-accent);
+    font: var(--small);
+    color: var(--color-white);
+  }
+}
