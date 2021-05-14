@@ -5,9 +5,24 @@
   top: 0;
   width: 100%;
   background-color: var(--color-bg-blue);
+  z-index: 100;
 
   &__container {
+    --paddings: 15px;
+    position: relative;
     align-items: center;
+    padding: var(--second-offset) var(--paddings);
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      width: calc(100% - (var(--paddings) * 2));
+      transform: translateX(-50%);
+      height: 1px;
+      background-color: var(--color-border)
+    }
   }
 
   &__left {

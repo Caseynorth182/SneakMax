@@ -75,3 +75,20 @@ a {
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;
 }
+
+.btn {
+  border-radius: 4px;
+  font: var(--middle-font);
+  color: var(--color-white);
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+
+  &--primary {
+    background: var(--color-accent);
+    padding: 22px 47px;
+    z-index: 2;
+  }
+
+  &:hover {
+    background: var(--color-accent-hover);
+  }
+}

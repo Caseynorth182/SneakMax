@@ -4,13 +4,18 @@
   --color-white: #fff;
   --color-bg-blue: #484283;
   --color-accent: #F14F4F;
+  --color-accent-hover: #CC4949;
+  --color-border: rgba(255, 255, 255, 0.5);
+  ;
 
   //отступы
   --grip-gap: 20px;
   --main-offset: 40px;
+  --second-offset: 20px;
 
   //Fonts 
   --font-family: 'Intro', sans-serif;
   --middle-high: 700 30px / 140% var(--font-family);
+  --middle-font: 400 16px / 140% var(--font-family);
   --small: 400 14px / 140% var(--font-family);
 }
