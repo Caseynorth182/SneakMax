@@ -10,7 +10,7 @@ html {
 
 body {
   margin: 0;
-  font-family: "asd", sans-serif;
+  font-family: "Intro", sans-serif;
   background-color: var(--color-white);
 }
 
@@ -86,9 +86,58 @@ a {
     background: var(--color-accent);
     padding: 22px 47px;
     z-index: 2;
+
+    &:hover {
+      background: var(--color-accent-hover);
+    }
   }
 
-  &:hover {
-    background: var(--color-accent-hover);
+  &--secondary {
+    padding: 22px 47px;
+    background-color: var(--color-main);
+    margin-bottom: var(--second-offset);
+
+    &:hover {
+      background-color: var(--color-main-hover);
+    }
+  }
+
+  &--reset {
+    padding: 0 var(--second-offset);
+  }
+}
+
+.title {
+  margin: 0;
+  margin-bottom: var(--main-offset);
+  font-family: var(--font-family);
+  font: var(--middle-high);
+  color: var(--color-main);
+}
+
+.custom-checkbox {
+  @include custom-checkbox;
+
+
+  &__content {
+    font: var(--middle-font);
+    color: var(--color-main);
+    padding-left: 35px;
+
+    &::before {
+      top: -3px;
+      width: 24px;
+      height: 24px;
+      border: 1px solid var(--color-cameo);
+      border-radius: 4px;
+    }
+
+    &::after {
+      top: -3px;
+      width: 24px;
+      height: 24px;
+      background-size: 15px 12px;
+      background-image: url("../img/check.svg");
+    }
   }
 }

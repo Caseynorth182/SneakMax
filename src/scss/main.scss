@@ -2,9 +2,13 @@
 //Большие компоненты 
 @import "./components/header";
 @import "./components/hero";
+@import "./components/catalog";
+@import "./components/about";
 
 
 //Маленькие компоненты
 @import "./components/nav";
 @import "./components/cart";
 @import "./components/logo";
+@import "./components/product";
+@import "./components/sizes-table";

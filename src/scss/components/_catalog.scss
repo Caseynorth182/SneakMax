@@ -1,0 +1,145 @@
+.catalog {
+  padding: var(--big-offset) 0;
+
+  &__left {
+    grid-column: 3 span;
+
+  }
+
+  &__grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-column: 9 span;
+  }
+
+  &__subtitle {
+    margin: 0;
+    color: var(--color-main);
+    font: var(--middle-font-book);
+    margin-bottom: var(--second-offset);
+  }
+
+  &__caption {
+    display: block;
+    margin: 0;
+    margin-bottom: var(--small-offset);
+    font: var(--middle-font);
+    color: var(--color-main);
+  }
+
+  &__prop {
+    margin-bottom: var(--second-offset);
+  }
+
+  &__prop-checkboxes {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__apply {
+    width: 100%;
+  }
+
+  &__more {
+    margin-top: var(--main-offset);
+  }
+}
+
+.catalog-list {
+  grid-template-columns: repeat(9, 1fr);
+
+  &__item {
+    grid-column: 3 span;
+  }
+
+  &__image {
+    position: relative;
+    width: 100%;
+    max-height: 293px;
+  }
+
+}
+
+.catalog-filters {
+
+  background-color: var(--color-bg);
+  padding: var(--second-offset);
+  border-radius: 4px;
+
+  &__btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.catalog-price {
+  &__wrapper {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 8px;
+      width: 1px;
+      bottom: 8px;
+      height: 34px;
+      background-color: var(--color-gray);
+    }
+
+  }
+
+
+  &__input {
+    border: 1px solid var(--color-gray);
+    width: 50%;
+    height: 50px;
+    background-color: transparent;
+    padding: 17px;
+    text-align: center;
+    font: var(--middle-font);
+    color: var(--color-main);
+
+    &:first-child {
+      border-right: none;
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+    }
+
+    &:last-child {
+      border-left: none;
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+    }
+  }
+
+  .noUi-horizontal {
+    height: 4px;
+    background-color: black;
+  }
+
+  .noUi-handle {
+    width: 3px;
+    height: 20px;
+    background-color: var(--color-main);
+    border-radius: 4px;
+    border: none;
+    box-shadow: none;
+    right: -2px;
+    top: -10px;
+    cursor: pointer;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+
+  .noUi-connect {
+    background-color: black;
+  }
+}

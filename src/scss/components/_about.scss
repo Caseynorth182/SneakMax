@@ -1,0 +1,26 @@
+.about {
+  overflow: hidden;
+  background-color: var(--color-bg-blue);
+  height: 580px;
+
+  &__container {
+    display: flex;
+  }
+
+  &__image {
+    display: flex;
+    flex-shrink: 0;
+    width: 530px;
+    height: 620px;
+    transform: rotate(20deg);
+    overflow: hidden;
+    transform: skewX(-20deg);
+
+    img {
+      width: 900px;
+      object-fit: cover;
+      transform: skewX(20deg);
+
+    }
+  }
+}
